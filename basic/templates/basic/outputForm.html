@@ -1,0 +1,231 @@
+<html>
+    <head>
+        <title> Form display </title>
+    </head>
+    <body>
+        <div>
+            <p> Personal details </p>
+            <hr>
+        </div>
+
+        <form action = "" method = "POST">
+            {% csrf_token %}
+            <!-- {{form21.as_p}} -->
+            
+            <div>
+                <table>
+                    <tr>
+                        <td> <label for="full_nam"> FULL NAME : </label> </td>
+                        <td> <input id="full_nam" type="text" name="full_nam" value = "{{dic.full_nam}}" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="apply_for"> APPLYING FOR : </label> </td>
+                        <td> <input id="apply_for" type="text" name="apply_for" value = "{{dic.apply_for}}" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="dob"> DATE OF BIRTH : </label> </td>
+                        <td> <input id="dob" type="text" name="dob" value = "{{dic.dob}}" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="gender"> GENDER : </label> </td>
+                        <td> <input id="gender" type="text" name="gender" value = "{{dic.gender}}" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="aadhar"> AADHAR NUMBER : </label> </td>
+                        <td> <input id="aadhar" type="text" name="aadhar" value = "{{dic.aadhar}}" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="bg"> BLOOD GROUP : </label> </td>
+                        <td> <input id="bg" type="text" name="bg" value = "{{dic.bg}}" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="rel"> RELIGION : </label> </td>
+                        <td> <input id="rel" type="text" name="rel" value = "{{dic.rel}}" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="cat"> CATEGORY : </label> </td>
+                        <td> <input id="cat" type="text" name="cat" value = "{{dic.cat}}" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="nat"> NATIONALITY : </label> </td>
+                        <td> <input id="nat" type="text" name="nat" value = "{{dic.nat}}" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="addr"> ADDRESS : </label> </td>
+                        <td> <input id="addr" type="text" name="addr" value = "{{dic.addr}}" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="city"> CITY : </label> </td>
+                        <td> <input id="city" type="text" name="city" value = "{{dic.city}}" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="state"> STATE : </label> </td>
+                        <td> <input id="state" type="text" name="state" value = "{{dic.state}}" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="code"> ZIP CODE : </label> </td>
+                        <td> <input id="code" type="text" name="code" value = "{{dic.code}}" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="country"> COUNTRY : </label> </td>
+                        <td> <input id="country" type="text" name="country" value = "{{dic.country}}" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="sc"> SINGLE CHILD? : </label> </td>
+                        <td> <input id="sc" type="text" name="sc" value = "{{dic.sc}}" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="fc"> FIRST CHILD? : </label> </td>
+                        <td> <input id="fc" type="text" name="fc" value = "{{dic.fc}}" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="sp"> SINGLE PARENT? : </label> </td>
+                        <td> <input id="sp" type="text" name="sp" value = "{{dic.sp}}" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="np"> NO PARENT? : </label> </td>
+                        <td> <input id="np" type="text" name="np" value = "{{dic.np}}" required/> </td>
+                    </tr>
+                                
+                </table>
+            </div>
+            
+            <div>
+                <p> DETAILS OF FATHER/GUARDIAN </p>
+                <hr>
+            </div>
+
+            <div>
+                <table>
+                    <tr>
+                        <td> <label for="full_nam1"> FULL NAME : </label> </td>
+                        <td> <input id="full_nam1" type="text" name="full_nam1" value = "{{dic.full_nam1}}" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="age1"> AGE (IN YEARS) : </label> </td>
+                        <td> <input id="age1" type="text" name="age1" value = "{{dic.age1}}" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="edu1"> EDUCATION : </label> </td>
+                        <td> <input id="edu1" type="text" name="edu1" value = "{{dic.edu1}}" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="occ1"> OCCUPATION : </label> </td>
+                        <td> <input id="occ1" type="text" name="occ1" value = "{{dic.occ1}}" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="des1"> DESIGNATION : </label> </td>
+                        <td> <input id="des1" type="text" name="des1" value = "{{dic.des1}}" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="inc1"> ANNUAL INCOME : </label> </td>
+                        <td> <input id="inc1" type="text" name="inc1" value = "{{dic.inc1}}" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="addr1"> OFFICE ADDRESS : </label> </td>
+                        <td> <input id="addr1" type="text" name="addr1" value = "{{dic.addr1}}" required/> </td>
+                     </tr>
+                    <tr>
+                        <td> <label for="offnum1"> OFFICE NUMBER : </label> </td>
+                        <td> <input id="offnum1" type="text" name="offnum1" value = "{{dic.offnum1}}" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="mob1"> MOBILE NUMBER : </label> </td>
+                        <td> <input id="mob1" type="text" name="mob1" value = "{{dic.mob1}}" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="email1"> EMAIL : </label> </td>
+                        <td> <input id="email1" type="text" name="email1" value = "{{dic.email1}}" required/> </td>
+                    </tr>
+                                    
+                </table>
+            </div>
+
+            <div>
+                <p> DETAILS OF MOTHER/GUARDIAN </p>
+                <hr>
+            </div>
+    
+            <div>
+                 <table>
+                    <tr>
+                        <td> <label for="full_nam2"> FULL NAME : </label> </td>
+                        <td> <input id="full_nam2" type="text" name="full_nam2" value = "{{dic.full_nam2}}" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="age2"> AGE (IN YEARS) : </label> </td>
+                        <td> <input id="age2" type="text" name="age2" value = "{{dic.age2}}" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="edu2"> EDUCATION : </label> </td>
+                        <td> <input id="edu2" type="text" name="edu2" value = "{{dic.edu2}}" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="occ2"> OCCUPATION : </label> </td>
+                        <td> <input id="occ2" type="text" name="occ2" value = "{{dic.occ2}}" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="des2"> DESIGNATION : </label> </td>
+                        <td> <input id="des2" type="text" name="des2" value = "{{dic.des2}}" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="inc2"> ANNUAL INCOME : </label> </td>
+                        <td> <input id="inc2" type="text" name="inc2" value = "{{dic.inc2}}" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="addr2"> OFFICE ADDRESS : </label> </td>
+                        <td> <input id="addr2" type="text" name="addr2" value = "{{dic.addr2}}" required/> </td>
+                     </tr>
+                    <tr>
+                        <td> <label for="offnum2"> OFFICE NUMBER : </label> </td>
+                        <td> <input id="offnum2" type="text" name="offnum2" value = "{{dic.offnum2}}" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="mob2"> MOBILE NUMBER : </label> </td>
+                        <td> <input id="mob2" type="text" name="mob2" value = "{{dic.mob2}}" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="email2"> EMAIL : </label> </td>
+                        <td> <input id="email2" type="text" name="email2" value = "{{dic.email2}}" required/> </td>
+                    </tr>
+                                        
+                </table>
+            </div>
+
+            <div>
+                <p> EMERGENCY CONTACT DETAILS </p>
+                <hr>
+            </div>
+        
+           <!--  <div>
+                 <table>
+                    <tr>
+                        <td> <label for="full_nam3"> FULL NAME : </label> </td>
+                        <td> <input id="full_nam3" type="text" name="full_nam3" value = "{{dic.full_nam3}}" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="mob3"> CONTACT NUMBER : </label> </td>
+                        <td> <input id="mob3" type="text" name="mob3" value = "{{dic.mob3}}" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="reln"> RELATION : </label> </td>
+                        <td> <input id="reln" type="text" name="reln" value = "{{dic.reln}}" required/> </td>
+                    </tr>
+                </table>
+            </div> -->
+            <div>
+                <hr>
+                <p> Form id </p>
+                <table>
+                    <tr>
+                        <td> <label for="form_id"> Form ID : </label> </td>
+                        <td> <input id="form_id" type="text" name="form_id" value = " 0 " required/> </td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <input type = "submit" value = "Submit">        
+        </form>
+    </body>
+</html>

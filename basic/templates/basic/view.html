@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title> view </title>
+    </head>
+    <body>
+        <div>
+            <h3> STUDENT DETAILS </h3>
+            <hr>
+        </div>
+        <div>
+            {% for p in par %}
+            <div>
+                <h4> {{p.personalDetails.full_nam}}</h4>
+                <p> {{p.form_id}} ........ {{p.personalDetails.aadhar}}</p>
+                
+                <p> {{p.full_nam1}} ........ {{p.full_nam2}}</p>
+                
+                <!-- <p><button onclick="location.href='/basic/user/{{p.form_id}}'" type="button"> VIEW </button></p>
+                <p><button onclick="location.href='/basic/edits/{{p.form_id}}'" type="button"> VIEW </button></p> -->
+                <form action = "/basic/user/{{p.form_id}}" method = "GET">
+                    <input type = "submit" value = "VIEW"/>
+                </form>
+                <form action = "/basic/editUser/{{p.form_id}}" method = "GET">
+                    <input type = "submit" value = "EDIT EXISTING FORM"/>
+                </form>
+            </div>
+            {% endfor %}
+        </div>
+               
+    </body>
+
+</html>

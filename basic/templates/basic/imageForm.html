@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title> Enter image url </title>
+    </head>
+    <body>
+        <div>
+            <h3> UPLOAD FORM </h3>
+            <p> Please upload the written form. Make sure the details are filled correctly.</p>
+        </div>
+        <hr>
+
+        <div>
+            <form action = "" method = "POST">
+                {% csrf_token %}
+                <!-- {{ form }} -->
+                <table>
+                    <tr>
+                        <td> <label for="your_first_page"> First Page : </label> </td>
+                        <td> <input id="your_first_page" type="text" name="your_first_page" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="your_second_page"> Second Page : </label> </td>
+                        <td> <input id="your_second_page" type="text" name="your_second_page" required/> </td>
+                    </tr>                    
+                </table>
+                <span></span></p>
+                <p><input type="submit" value="OK"></p>
+            </form>
+        </div>
+        
+    </body>
+</html>

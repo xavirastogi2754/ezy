@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title> user</title>
+    </head>
+    <body>
+        <div>
+            <h2 align = "center"> FORM NUMBER : {{i.personalDetails.form_id}} </h2>
+            <!-- <hr> -->
+        </div>
+        <div>
+            <p><h3> PERSONAL DETAILS </h3></p>
+            <p> <hr></p>
+            <table>
+                {% for k, v in dic1.items %}
+                <tr>
+                    <td>
+                        {{k}}
+                    </td>
+                    <td>
+                        {{v}}
+                    </td>
+                </tr>
+                {% endfor %}
+            </table>
+            <p></p>
+            <p><h3> FATHER/GUARDIAN DETAILS </h3></p>
+            <p> <hr></p>
+            <table>
+                {% for k, v in dic2.items %}
+                <tr>
+                    <td>
+                        {{k}}
+                    </td>
+                    <td>
+                        {{v}}
+                    </td>
+                </tr>
+                {% endfor %}
+            </table>
+            <p></p>
+            <p><h3> MOTHER/GUARDIAN DETAILS </h3></p>
+            <p> <hr></p>
+            <table>
+                {% for k, v in dic3.items %}
+                <tr>
+                    <td>
+                        {{k}}
+                    </td>
+                    <td>
+                        {{v}}
+                    </td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </body>
+</html>

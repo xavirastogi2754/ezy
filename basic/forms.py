@@ -1,0 +1,98 @@
+from django import forms
+
+class NameForm(forms.Form):
+    your_first_page = forms.CharField(label = 'scan first page ', max_length = 200)
+    your_second_page = forms.CharField(label = 'scan second page ', max_length = 200)
+
+class Editform(forms.Form):
+    full_nam = forms.CharField(label = 'FULL NAME : ')
+    apply_for = forms.CharField(label = 'APPLYING FOR :')
+    dob = forms.CharField(label = 'DATE OF BIRTH : ')
+    gender = forms.CharField(label = 'GENDER : ')
+    aadhar = forms.CharField(label = 'AADHAR CARD NUMBER : ')
+    bg = forms.CharField(label = 'BLOOD GROUP : ')
+    rel = forms.CharField(label = 'RELIGION : ')
+    cat = forms.CharField(label = 'CATEGORY : ')
+    nat = forms.CharField(label = 'NATIONALITY : ')
+    addr = forms.CharField(label = 'ADDRESS : ')
+    city = forms.CharField(label = 'CITY : ')
+    state = forms.CharField(label = 'STATE : ')
+    code = forms.CharField(label = 'PIN CODE : ')
+    country = forms.CharField(label = 'COUNTRY : ')
+    sc = forms.CharField(label = 'SINGLE CHILD? : ')
+    fc = forms.CharField(label = 'FIRST CHILD? : ')
+    sp = forms.CharField(label = 'SINGLE PARENT? : ')
+    np = forms.CharField(label = 'NO PARENT? : ')
+    full_nam1 = forms.CharField(label = 'FULL NAME : ')
+    age1 = forms.CharField(label = 'AGE : ')
+    edu1 = forms.CharField(label = 'EDUCATION : ')
+    occ1 = forms.CharField(label = 'OCCUPATION : ')
+    des1 = forms.CharField(label = 'DESIGNATION : ')
+    inc1 = forms.CharField(label = 'ANNUAL INCOME : ')
+    addr1 = forms.CharField(label = 'OFFICE ADDRESS : ')
+    offnum1 = forms.CharField(label = 'OFFICE NUMBER : ')
+    mob1 = forms.CharField(label = 'MOBILE NUMBER : ')
+    email1 = forms.EmailField(label = 'EMAIL ID : ')
+    full_nam2 = forms.CharField(label = 'FULL NAME : ')
+    age2 = forms.CharField(label = 'AGE : ')
+    edu2 = forms.CharField(label = 'EDuCATION : ')
+    occ2 = forms.CharField(label = 'OCCUPATION : ')
+    des2 = forms.CharField(label = 'DESIGNATION : ')
+    inc2 = forms.CharField(label = 'ANNUAL INCOME : ')
+    addr2 = forms.CharField(label = 'OFFICE ADDRESS : ')
+    offnum2 = forms.CharField(label = 'OFFICE NUMBER : ')
+    mob2 = forms.CharField(label = 'MOBILE NUMBER : ')
+    email2 = forms.EmailField(label = 'EMAIL ID : ')
+    form_id = forms.IntegerField(label = 'FORM ID : ')
+
+# class Userform(forms.Form):
+#     full_nam = forms.CharField(label = 'FULL NAME : ')
+#     apply_for = forms.CharField(label = 'APPLYING FOR :')
+#     dob = forms.CharField(label = 'DATE OF BIRTH : ')
+#     gender = forms.CharField(label = 'GENDER : ')
+#     aadhar = forms.IntegerField(label = 'AADHAR CARD NUMBER : ')
+#     bg = forms.CharField(label = 'BLOOD GROUP : ')
+#     rel = forms.CharField(label = 'RELIGION : ')
+#     cat = forms.CharField(label = 'CATEGORY : ')
+#     nat = forms.CharField(label = 'NATIONALITY : ')
+#     addr = forms.CharField(label = 'ADDRESS : ')
+#     city = forms.CharField(label = 'CITY : ')
+#     state = forms.CharField(label = 'STATE : ')
+#     code = forms.IntegerField(label = 'PIN CODE : ')
+#     country = forms.CharField(label = 'COUNTRY : ')
+#     sc = forms.CharField(label = 'SINGLE CHILD? : ')
+#     fc = forms.CharField(label = 'FIRST CHILD? : ')
+#     sp = forms.CharField(label = 'SINGLE PARENT? : ')
+#     np = forms.CharField(label = 'NO PARENT? : ')
+#     full_nam1 = forms.CharField(label = 'FULL NAME : ')
+#     age1 = forms.IntegerField(label = 'AGE : ')
+#     edu1 = forms.CharField(label = 'EDUCATION : ')
+#     occ1 = forms.CharField(label = 'OCCUPATION : ')
+#     des1 = forms.CharField(label = 'DESIGNATION : ')
+#     inc1 = forms.CharField(label = 'ANNUAL INCOME : ')
+#     addr1 = forms.CharField(label = 'OFFICE ADDRESS : ')
+#     offnum1 = forms.IntegerField(label = 'OFFICE NUMBER : ')
+#     mob1 = forms.IntegerField(label = 'MOBILE NUMBER : ')
+#     email1 = forms.EmailField(label = 'EMAIL ID : ')
+#     full_nam2 = forms.CharField(label = 'FULL NAME : ')
+#     age2 = forms.IntegerField(label = 'AGE : ')
+#     edu2 = forms.CharField(label = 'EDuCATION : ')
+#     occ2 = forms.CharField(label = 'OCCUPATION : ')
+#     des2 = forms.CharField(label = 'DESIGNATION : ')
+#     inc2 = forms.CharField(label = 'ANNUAL INCOME : ')
+#     addr2 = forms.CharField(label = 'OFFICE ADDRESS : ')
+#     offnum2 = forms.IntegerField(label = 'OFFICE NUMBER : ')
+#     mob2 = forms.IntegerField(label = 'MOBILE NUMBER : ')
+#     email2 = forms.EmailField(label = 'EMAIL ID : ')
+    # form_id = forms.IntegerField(label = 'FORM ID : ')
+
+
+
+
+
+
+
+
+
+
+
